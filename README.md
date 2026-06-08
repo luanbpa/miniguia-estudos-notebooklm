@@ -1,291 +1,347 @@
-# Miniguia de Estudos com NotebookLM: Gestao Financeira Aplicada a Impressao 3D
+# NotebookLM para Impressao 3D: Anycubic Kobra S1 Combo
 
 ## Contexto do Projeto
 
-Este projeto foi desenvolvido como parte de um desafio pratico da DIO, com o objetivo de explorar o uso da Inteligencia Artificial como ferramenta de aprendizagem ativa.
+Este projeto foi desenvolvido como parte de um desafio pratico da DIO sobre uso do **NotebookLM** como ferramenta de aprendizagem ativa.
 
-O tema escolhido para o caderno tematico no NotebookLM foi:
+O caderno tematico criado no NotebookLM tem como foco:
 
-**Gestao financeira basica aplicada a impressao 3D: custos, precificacao, fluxo de caixa e controle de desperdicios.**
+**Configurar, calibrar, otimizar e solucionar problemas de impressao 3D em impressoras Anycubic, com foco principal no modelo Anycubic Kobra S1 Combo.**
 
-A escolha do tema conecta conceitos introdutorios de educacao financeira com uma aplicacao pratica em impressao 3D, especialmente para quem utiliza impressoras como a **Anycubic Kobra S1 Combo** em estudos, pequenos servicos, prototipagem ou possivel geracao de renda.
+O projeto nasceu da necessidade de reunir, organizar e traduzir para uma linguagem simples materiais tecnicos que muitas vezes estao espalhados, em ingles, em foruns, documentacoes, comunidades, videos, reposititorios ou artigos sobre impressao 3D.
 
-A ideia central foi usar o NotebookLM para organizar fontes confiaveis, elaborar perguntas estrategicas, testar prompts e consolidar um miniguia de estudo que ajude iniciantes a entender como controlar custos, definir precos e reduzir perdas em projetos de impressao 3D.
+O objetivo e construir uma base de conhecimento em portugues para ajudar usuarios iniciantes e intermediarios a entenderem melhor:
+
+- calibracao da impressora;
+- configuracoes de fatiamento;
+- perfis de impressao;
+- primeira camada;
+- aderencia;
+- suportes;
+- costura;
+- acabamento;
+- modo vaso;
+- pecas estruturais;
+- ajustes no Orca Slicer;
+- ajustes no Anycubic Slicer;
+- diagnostico de erros comuns;
+- melhoria de qualidade e desempenho.
+
+> Status do projeto: **em desenvolvimento**.  
+> Este repositorio documenta a primeira versao do caderno e sera atualizado conforme novos testes, fontes, perfis e calibracoes forem validados.
 
 ## Objetivos de Estudo
 
-Os principais objetivos deste caderno foram:
+Os principais objetivos do caderno no NotebookLM foram:
 
-- Compreender conceitos basicos de controle financeiro, fluxo de caixa e planejamento.
-- Entender a diferenca entre receita, custo, despesa, lucro e margem.
-- Aprender como a precificacao influencia a sustentabilidade de um pequeno projeto ou negocio.
-- Relacionar falhas de impressao 3D com desperdicio financeiro, retrabalho e perda de produtividade.
-- Criar perguntas estrategicas para estudar o tema com apoio de IA.
-- Registrar variacoes de prompts, respostas obtidas e dificuldades encontradas durante o processo.
-- Consolidar um miniguia com resumos, glossario e prompts reutilizaveis para revisoes futuras.
+- Criar um assistente de consulta para duvidas sobre impressao 3D.
+- Especializar o material em impressoras Anycubic, especialmente a Kobra S1 Combo.
+- Reunir fontes abertas sobre erros, calibracao, fatiamento, desempenho e boas praticas.
+- Transformar informacoes tecnicas em orientacoes simples para usuarios leigos.
+- Apoiar a criacao e refinamento de perfis no Orca Slicer e no Anycubic Slicer.
+- Documentar prompts, perguntas e dificuldades encontradas durante a construcao do caderno.
+- Construir um miniguia de estudo e consulta rapida para diagnostico e melhoria de impressoes.
+
+## Publico-Alvo
+
+Este projeto foi pensado para:
+
+- usuarios iniciantes em impressao 3D;
+- donos de impressoras Anycubic;
+- usuarios da Anycubic Kobra S1 Combo;
+- pessoas com dificuldade para configurar fatiadores;
+- pessoas que querem melhorar primeira camada, acabamento e resistencia;
+- usuarios que precisam de um material em portugues, direto e facil de consultar.
 
 ## Curadoria de Fontes
 
-Foram selecionadas fontes abertas em texto e PDF, priorizando materiais introdutorios, confiaveis e aplicaveis ao contexto do projeto.
+Foram selecionadas fontes abertas em texto, documentacao e materiais tecnicos para alimentar o NotebookLM.
 
 | Fonte | Tipo | Uso no Projeto |
 |---|---|---|
-| [Sebrae - Controle financeiro para pequenas empresas](https://sebrae.com.br/sites/PortalSebrae/ufs/es/Biblioteca-Digital/Finan%C3%A7as/controle-financeiros-para-pequenas-empresas%2C6287029a85ce5910VgnVCM1000001b00320aRCRD) | Texto/Ebook | Base para controles financeiros, organizacao de entradas e saidas e gestao simples. |
-| [Sebrae - Fluxo de Caixa](https://sebrae.com.br/Sebrae/Portal%20Sebrae/Anexos/0_fluxo-de-caixa.pdf) | PDF | Referencia para entender fluxo de caixa, saldo do periodo e acompanhamento financeiro. |
-| [Sebrae - A importancia da determinacao do preco de venda](https://sebrae.com.br/Sebrae/Portal%20Sebrae/UFs/MG/Imagens/Infogra%CC%81fico%20-%20A%20Importa%CC%82ncia%20da%20determinac%CC%A7a%CC%83o%20do%20prec%CC%A7o%20de%20venda%20%2802%29.pdf) | PDF | Base para estudo de precificacao, custos, despesas e margem. |
-| [Banco Central - Caderno de Educacao Financeira](https://www.bcb.gov.br/pre/pef/port/caderno_cidadania_financeira.pdf) | PDF | Apoio conceitual sobre planejamento financeiro, orcamento e tomada de decisao. |
-| [Acelera3D - Guia de erros de impressao 3D](https://acelera3d.com/erros-3d/) | Texto | Fonte tecnica para relacionar falhas de impressao com retrabalho, desperdicio e custos. |
+| [Acelera3D - Guia de erros 3D](https://acelera3d.com/erros-3d) | Artigo tecnico em PT-BR | Base para diagnostico de erros comuns como warping, stringing, entupimento, ma aderencia, deslocamento de camada e falhas de extrusao. |
+| Documentacao e materiais da Anycubic | Documentacao / suporte | Base para entender recursos, perfis e comportamento esperado de impressoras Anycubic. |
+| Orca Slicer Wiki / documentacao do projeto | Documentacao tecnica | Base para calibracoes, perfis de impressao, ajustes de velocidade, fluxo, temperatura, retracao, suportes e costura. |
+| Comunidades e reposititorios sobre Orca Slicer, Bambu/Prusa/Anycubic profiles | GitHub / comunidade | Referencia para boas praticas de perfis, parametros e organizacao de configuracoes. |
+| Materiais praticos sobre calibracao de impressao 3D | Guias e artigos | Apoio para primeira camada, nivelamento, fluxo, pressao, temperatura, retracao, cooling, ironing e qualidade superficial. |
 
 ## Engenharia de Prompts e Cicatrizes
 
-Durante o uso do NotebookLM, foram testadas perguntas estrategicas e variacoes de prompts para obter respostas mais uteis, aplicaveis e bem referenciadas.
+Durante a construcao do caderno no NotebookLM, foram testadas perguntas estrategicas e variacoes de prompts para transformar conteudo tecnico em respostas praticas.
 
 ### Prompt 1
 
 ```text
-Explique os principais controles financeiros que uma pessoa iniciante precisa acompanhar em um pequeno projeto de impressao 3D.
+Explique os principais erros de impressao 3D para um iniciante usando uma linguagem simples e organizada por sintomas, causas provaveis e solucoes.
 ```
 
-**Resultado esperado:** uma explicacao simples sobre entradas, saidas, custos, despesas e lucro.
+**Resultado esperado:** obter uma explicacao clara para usuarios leigos.
 
-**Resposta obtida:** o NotebookLM destacou a importancia de registrar receitas e despesas, controlar o fluxo de caixa e separar gastos pessoais dos gastos da atividade.
+**Cicatriz / dificuldade:** respostas tecnicas demais tendem a listar termos sem orientar a sequencia de diagnostico.
 
-**Referencia principal:** materiais do Sebrae sobre controle financeiro e fluxo de caixa.
-
-**Cicatriz / dificuldade:** a primeira resposta ficou muito generica e pouco conectada a impressao 3D.
-
-**Ajuste feito no prompt:**
+**Ajuste feito:**
 
 ```text
-Explique os principais controles financeiros para um pequeno projeto de impressao 3D, considerando filamento, energia, manutencao, falhas de impressao, tempo de maquina e preco de venda.
+Monte uma tabela de diagnostico para iniciantes com: problema visivel, causa mais provavel, ajuste no fatiador, ajuste mecanico e como testar se resolveu.
 ```
 
-**Melhoria percebida:** a resposta passou a conectar melhor os conceitos financeiros com a realidade da impressao 3D.
+**Melhoria percebida:** a resposta ficou mais acionavel e util para consulta rapida.
 
 ---
 
 ### Prompt 2
 
 ```text
-Quais custos devem ser considerados para precificar uma peca impressa em 3D?
+Quais configuracoes devo revisar no Orca Slicer para melhorar a primeira camada na Anycubic Kobra S1 Combo?
 ```
 
-**Resultado esperado:** lista de custos diretos e indiretos.
+**Resultado esperado:** orientacoes sobre aderencia, altura de camada, temperatura, velocidade inicial e fluxo.
 
-**Resposta obtida:** foram citados custos com material, energia, tempo, manutencao e margem desejada.
+**Cicatriz / dificuldade:** a IA pode sugerir valores genericos sem considerar que cada impressora, mesa, filamento e ambiente exigem ajuste fino.
 
-**Referencia principal:** material do Sebrae sobre preco de venda e fonte tecnica sobre erros de impressao 3D.
-
-**Cicatriz / dificuldade:** a IA inicialmente nao diferenciou bem custo variavel, custo fixo e despesa.
-
-**Ajuste feito no prompt:**
+**Ajuste feito:**
 
 ```text
-Classifique os custos de uma peca impressa em 3D em custos variaveis, custos fixos e despesas, explicando como cada grupo afeta a formacao do preco de venda.
+Explique como ajustar a primeira camada na Anycubic Kobra S1 Combo sem inventar valores fixos. Diga quais parametros testar, em que ordem testar e quais sintomas observar.
 ```
 
-**Melhoria percebida:** a resposta ficou mais organizada e mais facil de transformar em planilha ou dashboard.
+**Melhoria percebida:** a resposta passou a orientar processo de calibracao, nao apenas numeros isolados.
 
 ---
 
 ### Prompt 3
 
 ```text
-Como as falhas de impressao 3D impactam o resultado financeiro de um projeto?
+Crie perfis de impressao para PLA usando como base os perfis padrao da Anycubic e boas praticas de fatiamento.
 ```
 
-**Resultado esperado:** conexao entre problemas tecnicos e perdas financeiras.
+**Resultado esperado:** uma estrutura inicial de perfis para qualidade, velocidade, estrutural e modo vaso.
 
-**Resposta obtida:** o NotebookLM relacionou erros como falta de aderencia, deformacoes, entupimentos e retrabalho com desperdicio de filamento, tempo de maquina e energia.
+**Cicatriz / dificuldade:** perfis prontos podem induzir erro se forem aplicados sem teste. O projeto precisa deixar claro que os perfis sao ponto de partida.
 
-**Referencia principal:** Acelera3D, combinada com conceitos de custo e controle financeiro do Sebrae.
-
-**Cicatriz / dificuldade:** a IA trouxe muitos exemplos tecnicos, mas inicialmente faltou traduzir isso em impacto financeiro.
-
-**Ajuste feito no prompt:**
+**Ajuste feito:**
 
 ```text
-Transforme os principais erros de impressao 3D em exemplos de impacto financeiro, mostrando como cada erro pode gerar desperdicio, retrabalho ou reducao do lucro.
+Crie uma proposta de perfis em desenvolvimento para PLA, explicando a finalidade de cada perfil, quais parametros devem ser validados e quais testes devem ser feitos antes de usar em pecas reais.
 ```
 
-**Melhoria percebida:** a resposta ficou mais pratica e conectada ao objetivo do projeto.
+**Melhoria percebida:** o resultado ficou mais responsavel e alinhado com o carater experimental do projeto.
 
 ---
 
 ### Prompt 4
 
 ```text
-Crie um checklist financeiro antes de aceitar uma encomenda de impressao 3D.
+Como melhorar suportes para facilitar remocao e preservar acabamento onde o suporte toca na peca?
 ```
 
-**Resultado esperado:** lista pratica para tomada de decisao.
+**Resultado esperado:** entender parametros de suporte, interface, distancia Z, densidade e orientacao da peca.
 
-**Resposta obtida:** a IA sugeriu verificar custo do material, tempo estimado, risco de erro, prazo, margem e preco final.
+**Cicatriz / dificuldade:** a IA tende a tratar suporte como ajuste unico, mas acabamento depende de material, geometria, orientacao e cooling.
 
-**Referencia principal:** Sebrae sobre controle financeiro e preco de venda.
-
-**Cicatriz / dificuldade:** a primeira versao parecia uma lista comum de tarefas, sem orientar decisao.
-
-**Ajuste feito no prompt:**
+**Ajuste feito:**
 
 ```text
-Crie um checklist financeiro de decisao para saber se vale a pena aceitar uma encomenda de impressao 3D, incluindo criterios de custo, tempo, risco de falha, preco minimo e margem.
+Explique ajustes de suporte separando: facilidade de remocao, acabamento da superficie, resistencia durante a impressao e risco de queda da peca.
 ```
 
-**Melhoria percebida:** o checklist ficou mais util para avaliar se uma encomenda e viavel.
+**Melhoria percebida:** a resposta ficou mais equilibrada e mostrou trade-offs.
 
 ## Miniguia de Estudo
 
-### 1. Controle financeiro
+### 1. Diagnostico por sintoma
 
-O controle financeiro e o registro organizado de tudo o que entra e sai de dinheiro. Em um pequeno projeto de impressao 3D, isso inclui valores recebidos por pecas vendidas, gastos com filamento, energia eletrica, manutencao, bicos, mesa, cola, embalagem, transporte e outros custos.
+O caderno deve ajudar o usuario a partir do problema visivel na peca, e nao apenas de termos tecnicos.
 
-Sem controle financeiro, a pessoa pode acreditar que esta tendo lucro apenas porque recebeu dinheiro, mas sem perceber que os custos consumiram grande parte do resultado.
+Exemplos:
 
-### 2. Fluxo de caixa
+- a peca nao gruda na mesa;
+- a primeira camada fica falhada;
+- aparecem fios entre partes da peca;
+- cantos levantam;
+- camadas deslocam;
+- suporte fica dificil de remover;
+- superficie superior fica feia;
+- costura fica muito marcada;
+- peca quebra com facilidade;
+- modo vaso fica fragil.
 
-O fluxo de caixa permite acompanhar entradas e saidas em determinado periodo. Ele ajuda a responder perguntas como:
+Para cada sintoma, o NotebookLM deve orientar causas provaveis e uma sequencia segura de testes.
 
-- Quanto entrou no mes?
-- Quanto foi gasto?
-- Qual foi o saldo final?
-- O projeto esta gerando lucro ou prejuizo?
-- Existem gastos recorrentes que precisam ser reduzidos?
+### 2. Primeira camada
 
-Na impressao 3D, o fluxo de caixa pode ser organizado por dia, semana ou mes, registrando cada servico realizado e cada despesa relacionada.
+A primeira camada e uma das partes mais importantes da impressao 3D. Uma primeira camada ruim pode causar falha total da peca.
 
-### 3. Precificacao
+Pontos de atencao:
 
-Precificar uma peca impressa em 3D nao significa apenas somar o valor do filamento. O preco deve considerar:
+- limpeza da mesa;
+- nivelamento;
+- Z offset;
+- temperatura do bico;
+- temperatura da mesa;
+- velocidade da primeira camada;
+- fluxo inicial;
+- ventilacao na camada inicial;
+- aderencia e tipo de superficie.
 
-- Material utilizado.
-- Energia eletrica.
-- Tempo de impressao.
-- Tempo de preparacao e acabamento.
-- Risco de falha.
-- Manutencao da impressora.
-- Desgaste de pecas.
-- Embalagem.
-- Impostos ou taxas, se houver.
-- Margem de lucro.
+O projeto orienta que ajustes sejam feitos em sequencia, observando sintomas e evitando mudar muitos parametros ao mesmo tempo.
 
-Uma precificacao mal feita pode gerar vendas com prejuizo, mesmo quando ha movimento financeiro.
+### 3. Perfis de impressao
 
-### 4. Custos fixos, custos variaveis e despesas
+Os perfis propostos no projeto estao em desenvolvimento e devem ser tratados como ponto de partida.
 
-Custos variaveis mudam conforme a producao. Na impressao 3D, exemplos incluem filamento, energia e embalagem.
+Perfis previstos:
 
-Custos fixos existem mesmo que nenhuma peca seja vendida. Exemplos: assinatura de software, aluguel de espaco, internet ou depreciacao da impressora.
+- perfil equilibrado para uso geral;
+- perfil de qualidade/acabamento;
+- perfil rapido para prototipos;
+- perfil estrutural com foco em resistencia;
+- perfil modo vaso com maior robustez;
+- perfil com suportes otimizados;
+- perfil com ironing/passagem de ferro;
+- perfil com ajustes de costura suavizada.
 
-Despesas sao gastos de apoio, como transporte, divulgacao, ferramentas, organizacao e manutencao administrativa.
+### 4. Orca Slicer e Anycubic Slicer
 
-Separar esses grupos ajuda a entender o preco minimo necessario para nao ter prejuizo.
+O caderno considera o uso de dois fatiadores:
 
-### 5. Falhas de impressao e desperdicio
+- **Anycubic Slicer**, por ser o fatiador oficial/base para usuarios da marca.
+- **Orca Slicer**, por oferecer recursos avancados de calibracao e controle de parametros.
 
-Erros de impressao impactam diretamente o resultado financeiro. Uma peca perdida nao consome apenas filamento. Ela tambem consome energia, tempo de maquina, tempo de preparacao e pode atrasar entregas.
+O objetivo e ajudar o usuario a entender quais parametros existem, onde eles influenciam e como testar alteracoes sem comprometer a impressao.
 
-Problemas como falta de aderencia, warping, entupimento, stringing, deslocamento de camada ou ma calibragem aumentam o custo real da producao. Por isso, melhorar a calibragem e reduzir erros tambem e uma decisao financeira.
+### 5. Suportes
 
-### 6. Tomada de decisao
+Suportes devem equilibrar quatro fatores:
 
-Antes de aceitar uma encomenda, e importante avaliar se o preco cobre todos os custos e ainda gera margem. Um projeto pode parecer simples, mas se tiver alto risco de falha, acabamento demorado ou consumo elevado de material, talvez precise de preco maior.
+- segurar a peca durante a impressao;
+- sair sem quebrar a peca;
+- preservar acabamento;
+- nao desperdiçar material em excesso.
 
-A IA pode ajudar a organizar essas analises, mas o usuario precisa conferir as fontes, validar os calculos e aplicar pensamento critico.
+O projeto documenta ajustes como densidade, interface, distancia Z, padrao de suporte, orientacao da peca e areas criticas de contato.
+
+### 6. Acabamento e desempenho
+
+O caderno tambem aborda:
+
+- costura;
+- retracao;
+- temperatura;
+- velocidade;
+- cooling;
+- fluxo;
+- ironing;
+- paredes;
+- preenchimento;
+- resistencia;
+- qualidade superficial;
+- reducao de marcas visuais.
 
 ## Glossario
 
-**Receita:** valor recebido por vendas ou servicos.
+**Fatiador:** software que transforma o modelo 3D em instrucoes para a impressora.
 
-**Custo:** gasto diretamente ligado a producao de uma peca ou servico.
+**Perfil de impressao:** conjunto de configuracoes usadas para imprimir um material ou tipo de peca.
 
-**Despesa:** gasto necessario para manter a atividade, mas que nao esta diretamente ligado a uma peca especifica.
+**Primeira camada:** camada inicial da impressao, essencial para aderencia.
 
-**Lucro:** resultado positivo apos subtrair custos e despesas da receita.
+**Z offset:** ajuste fino da distancia entre bico e mesa.
 
-**Prejuizo:** resultado negativo quando os custos e despesas superam a receita.
+**Fluxo:** quantidade de material extrudado.
 
-**Fluxo de caixa:** controle das entradas e saidas de dinheiro em um periodo.
+**Retracao:** movimento que puxa filamento para reduzir fios/stringing.
 
-**Precificacao:** processo de definir o preco de venda de um produto ou servico.
+**Stringing:** fios finos entre partes da peca.
 
-**Custo variavel:** custo que aumenta ou diminui conforme a quantidade produzida.
+**Warping:** levantamento das bordas da peca durante a impressao.
 
-**Custo fixo:** custo que permanece mesmo sem producao.
+**Cooling:** ventilacao/resfriamento da peca.
 
-**Margem de lucro:** percentual ou valor que sobra apos cobrir custos e despesas.
+**Ironing / passar ferro:** recurso que suaviza superficies superiores.
 
-**Margem de contribuicao:** valor que sobra da venda apos custos variaveis, ajudando a pagar custos fixos e gerar lucro.
+**Costura:** ponto onde a impressora inicia/fecha perimetros, podendo deixar marca.
 
-**Retrabalho:** necessidade de refazer uma peca ou corrigir falhas.
+**Suporte:** estrutura temporaria para imprimir partes suspensas.
 
-**Desperdicio:** perda de material, tempo, energia ou recursos.
+**Modo vaso:** modo de impressao em parede continua, usado para objetos ocos.
 
-**Viabilidade:** analise para entender se um projeto vale a pena financeiramente.
+**Perfil estrutural:** configuracao voltada para resistencia mecanica.
 
 ## Prompts Reutilizaveis
 
 ```text
-Explique de forma simples os principais conceitos financeiros deste caderno, usando exemplos de impressao 3D.
+Explique este problema de impressao 3D para um iniciante: [descrever sintoma]. Liste causas provaveis, testes e ajustes no fatiador.
 ```
 
 ```text
-Liste os custos fixos, custos variaveis e despesas de um pequeno projeto de impressao 3D.
+Monte um checklist de primeira camada perfeita para a Anycubic Kobra S1 Combo.
 ```
 
 ```text
-Crie um modelo simples de fluxo de caixa mensal para uma pessoa que vende pecas impressas em 3D.
+Compare os ajustes equivalentes no Orca Slicer e no Anycubic Slicer para melhorar aderencia e acabamento.
 ```
 
 ```text
-Explique como calcular o preco minimo de uma peca impressa em 3D considerando material, energia, tempo, falhas e margem.
+Crie uma sequencia de calibracao segura para PLA na Anycubic Kobra S1 Combo, sem inventar valores absolutos.
 ```
 
 ```text
-Transforme os principais erros de impressao 3D em exemplos de impacto financeiro.
+Explique como ajustar suportes considerando facilidade de remocao e acabamento da superficie apoiada.
 ```
 
 ```text
-Crie um checklist para avaliar se vale a pena aceitar uma encomenda de impressao 3D.
+Crie um perfil experimental para peca estrutural, explicando quais parametros precisam ser testados antes de uso real.
 ```
 
 ```text
-Gere 10 perguntas de revisao sobre controle financeiro, fluxo de caixa e precificacao aplicados a impressao 3D.
+Crie um perfil experimental para modo vaso com foco em maior resistencia e menor risco de quebra.
 ```
 
 ```text
-Resuma as fontes deste caderno em topicos objetivos para estudo rapido.
+Explique como reduzir marcas de costura e quais compromissos podem surgir.
 ```
 
 ```text
-Crie uma tabela com conceito, definicao simples e exemplo pratico em impressao 3D.
+Explique quando usar ironing/passagem de ferro e quais problemas podem aparecer se o ajuste estiver errado.
 ```
 
 ```text
-Aponte quais informacoes financeiras eu deveria registrar em uma planilha ou dashboard para acompanhar meu projeto de impressao 3D.
+Transforme a resposta em instrucoes simples para uma pessoa leiga em impressao 3D.
 ```
 
 ## Aprendizados do Projeto
 
-Este desafio mostrou que o NotebookLM pode ser usado como uma ferramenta de estudo ativo, nao apenas como um gerador de respostas. Ao trabalhar com fontes selecionadas, perguntas estrategicas e variacoes de prompts, foi possivel transformar materiais introdutorios em um guia pratico e aplicavel.
+O principal aprendizado foi que a IA pode ser usada como ferramenta de organizacao tecnica, desde que seja alimentada com boas fontes e orientada por perguntas claras.
 
-O principal aprendizado foi que a qualidade da resposta da IA depende da qualidade das fontes, da clareza da pergunta e da capacidade de revisar criticamente o resultado.
+No caso da impressao 3D, respostas genericas podem levar a ajustes ruins. Por isso, o projeto prioriza:
 
-No contexto da impressao 3D, o estudo tambem mostrou que conhecimento tecnico e financeiro precisam caminhar juntos. Melhorar calibragem, reduzir falhas e controlar custos sao partes do mesmo processo de profissionalizacao.
+- diagnostico por sintomas;
+- linguagem simples;
+- sequencia de testes;
+- cautela com valores fixos;
+- foco na Anycubic Kobra S1 Combo;
+- distincao entre configuracao sugerida e configuracao validada;
+- documentacao continua.
 
 ## Como Este Projeto Pode Evoluir
 
-Este caderno pode ser expandido futuramente com:
+Este projeto esta em desenvolvimento e pode evoluir com:
 
-- Uma planilha de calculo de custos de impressao 3D.
-- Um dashboard em Power BI para acompanhar receitas, despesas e margem.
-- Comparacao entre diferentes tipos de filamento.
-- Analise de viabilidade para venda de pecas personalizadas.
-- Guia pratico de precificacao para iniciantes.
-- Integracao com o projeto de conhecimento sobre Anycubic Kobra S1 Combo.
+- novos perfis testados no Anycubic Slicer;
+- novos perfis testados no Orca Slicer;
+- comparacao entre filamentos;
+- registro de testes reais de temperatura, fluxo, retracao e cooling;
+- imagens de problemas e solucoes;
+- tabela de sintomas e ajustes;
+- guia especifico para Kobra S1 Combo;
+- versao em PDF do miniguia;
+- repositorio de perfis organizados por material e finalidade.
 
-## Descricao para Entrega na DIO
+## Descricao Corrigida para Entrega na DIO
 
-Projeto desenvolvido com NotebookLM para criar um miniguia de estudos sobre gestao financeira basica aplicada a impressao 3D. O trabalho reuniu fontes abertas sobre controle financeiro, fluxo de caixa, precificacao, planejamento financeiro e erros de impressao 3D. A partir dessas fontes, foram definidos objetivos de estudo, perguntas estrategicas, variacoes de prompts, registros de dificuldades e um guia final com resumos, glossario e prompts reutilizaveis.
+Projeto em desenvolvimento criado no NotebookLM para organizar uma base de conhecimento em portugues sobre configuracao, calibracao, desempenho e solucao de problemas em impressoras 3D Anycubic, com foco no modelo Anycubic Kobra S1 Combo.
 
-O projeto conecta educacao financeira introdutoria com uma aplicacao pratica em impressao 3D, demonstrando o uso da IA como ferramenta de aprendizagem ativa, organizacao do conhecimento e apoio a tomada de decisao.
+O caderno reune fontes abertas, documentacoes, referencias tecnicas e guias praticos sobre erros de impressao, primeira camada, suportes, costura, acabamento, perfis de impressao, Orca Slicer e Anycubic Slicer. O objetivo e transformar informacoes tecnicas dispersas em um material simples, acessivel e util para usuarios leigos ou iniciantes em impressao 3D.
+
+Foram definidos objetivos de estudo, perguntas estrategicas, variacoes de prompts, registros de dificuldades e um miniguia com glossario e prompts reutilizaveis. O projeto ainda esta em evolucao e sera aprimorado com novos testes, calibracoes e perfis especificos para a Kobra S1 Combo.
